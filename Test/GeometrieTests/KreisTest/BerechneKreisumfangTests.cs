@@ -8,7 +8,7 @@ namespace Test.GeometrieTests
     /// 
     /// Auf diese Möglichkeit wurde bewusst im Rahmen der Grundlagen verzichtet.
     /// </summary>
-    public class BerechneKreisumfang
+    public class BerechneKreisumfangTests
     {
         private static readonly double UMFANG_EINHEITSKREIS = 2.0 * Math.PI;
 
@@ -19,7 +19,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -29,7 +29,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -49,7 +49,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -59,7 +59,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -69,7 +69,7 @@ namespace Test.GeometrieTests
             double erwartet = 0d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -79,7 +79,7 @@ namespace Test.GeometrieTests
             double erwartet = UMFANG_EINHEITSKREIS;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -89,7 +89,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -99,7 +99,7 @@ namespace Test.GeometrieTests
             double erwartet = UMFANG_EINHEITSKREIS * 0.5d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -109,7 +109,7 @@ namespace Test.GeometrieTests
             double erwartet = UMFANG_EINHEITSKREIS * int.MaxValue;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -119,7 +119,7 @@ namespace Test.GeometrieTests
             double erwartet = -1d;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
 
         [Test]
@@ -129,7 +129,7 @@ namespace Test.GeometrieTests
             double erwartet = UMFANG_EINHEITSKREIS * int.MaxValue + UMFANG_EINHEITSKREIS;
 
             double resultat = Kreis.BerechneKreisumfang(eingabe);
-            Assert.That(resultat, Is.EqualTo(eingabe), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
+            Assert.That(resultat, Is.EqualTo(erwartet), $"Für einen Radius von '{eingabe}' beträgt der Umfang '{erwartet}'.");
         }
     }
 }
